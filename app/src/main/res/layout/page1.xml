@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/card_group_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- SCROLL CONTENT -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- CARD GROUP -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:text="Vessel Information"
+            android:textColor="#1A1A1A"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+            <!-- Engineer Name -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Engineer Name *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/engineer_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter Engineer Name"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- Vessel -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Vessel Name *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/vessel_name_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter Vessel Name"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- Location -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Location *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Location_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter Location"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- Vessel Flag -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Vessel Flag *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Vessel_Flag_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter Vessel Flag"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- Serial Number -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Main Serial Number *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Main_Serial_Number_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter Serial Number"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- DATE & TIME INPUT WITH CALENDAR ICON -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Inspection Date n Time *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/inspection_date_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios_blur"
+                android:drawableEnd="@drawable/ic_calendar"
+                android:drawablePadding="10dp"
+                android:focusable="false"
+                android:hint="DD/MM/YYYY"
+                android:textColorHint="#999999"
+                android:textSize="14sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- IMO -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="IMO Number *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/imo_Number_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter IMO Number"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- MMSI -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="MMSI Number *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/mmsi_Number_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter MMSI Number"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000"/>
+
+            <!-- Class -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Vessel Class *"
+                android:textColor="#333333"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Vessel_Class_input"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/input_ios"
+                android:hint="Enter Vessel Class"
+                android:textColorHint="#999999"
+                android:textSize="12sp"
+                android:padding="12dp"
+                android:textColor="#000000" />
+
+            <!-- VDR Spinner -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="18dp"
+                android:text="Select VDR Make *"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                />
+
+            <Spinner
+                android:id="@+id/vdr_make_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/spinner_value_bg"
+                android:popupBackground="@drawable/spinner_dropdown_bg"
+                android:padding="12dp"
+                android:textColorHint="#999999"
+                android:spinnerMode="dropdown"/>
+
+        </LinearLayout>
+        </ScrollView>
+
+        <!-- NAVIGATION -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Cancel"
+                android:textColor="#D92D20"
+                android:background="@drawable/button_cancel_bg"
+                android:layout_marginEnd="8dp" />
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="0dp" />
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Continue →"
+                android:textColor="#000000"
+                android:background="@drawable/button_cancel_bg" />
+        </LinearLayout>
+
+    </LinearLayout>

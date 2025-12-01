@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    card_view:cardCornerRadius="14dp"
+    card_view:cardElevation="6dp">
+
+    <LinearLayout
+        android:id="@+id/card_container"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Vessel Name -->
+        <TextView
+            android:id="@+id/vessel_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vessel Name"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:paddingBottom="4dp" />
+
+        <!-- IMO -->
+        <TextView
+            android:id="@+id/imo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="IMO: 1234567"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <!-- Date -->
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 01/01/2025"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:paddingBottom="4dp" />
+
+        <!-- Engineer -->
+        <TextView
+            android:id="@+id/engineer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Engineer: John Smith"
+            android:textColor="#444444"
+            android:textSize="14sp"
+            android:paddingBottom="10dp" />
+
+        <!-- Status Badge -->
+        <LinearLayout
+            android:id="@+id/status_badge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="6dp"
+            android:orientation="horizontal"
+            android:background="#22C55E"
+            android:gravity="center"
+            android:layout_marginTop="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:layout_gravity="start"
+            android:minHeight="32dp"
+            android:clipToPadding="false"
+            android:clipChildren="false"
+            android:backgroundTint="#22C55E"
+            card_view:cardCornerRadius="20dp">
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="COMPLETED"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- ON track -->
+    <item android:color="#A5D6A7" android:state_checked="true"/>
+
+    <!-- OFF track (light grey) -->
+    <item android:color="#D9D9D9"/>
+
+</selector>

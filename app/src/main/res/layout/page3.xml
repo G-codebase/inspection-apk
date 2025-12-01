@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/card_group_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Scroll Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Section 8: Video -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8. Video *"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- 8.1 - X Band Radar -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8.1 - X Band Radar"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source channel *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/x_band_source_channel"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source channel"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source type *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/x_band_source_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source type"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source Info *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/x_band_source_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source info"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="24dp">
+
+                <!-- 8.2 - S Band Radar -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8.2 - S Band Radar"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source channel *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/s_band_source_channel"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source channel"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source type *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/s_band_source_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source type"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source Info *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/s_band_source_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source info"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:background="@drawable/card_bg"
+                    android:padding="16dp"
+                    android:layout_marginBottom="24dp">
+
+                <!-- 8.3 - Master ECDIS -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8.3 - Master ECDIS"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source channel *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/master_ecdis_source_channel"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source channel"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source type *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/master_ecdis_source_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source type"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source Info *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/master_ecdis_source_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source info"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+
+                 <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:background="@drawable/card_bg"
+                      android:padding="16dp"
+                      android:layout_marginBottom="24dp">
+
+                <!-- 8.4 - Backup ECDIS -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="8.4 - Backup ECDIS"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source channel *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/backup_ecdis_source_channel"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source channel"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source type *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/backup_ecdis_source_type"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source type"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Source Info *"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="4dp" />
+
+                    <EditText
+                        android:id="@+id/backup_ecdis_source_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:hint="Note source info"
+                        android:textColorHint="#999999"
+                        android:textSize="14sp"
+                        android:padding="8dp"
+                        android:background="@drawable/input_ios"
+                        android:textColor="#000000" />
+                </LinearLayout>
+
+
+    <!-- Section 9: Maker Report -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="9. Maker Report *"
+    android:textSize="18sp"
+    android:textStyle="bold"
+    android:textColor="#000000"
+    android:layout_marginBottom="12dp" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Attach Files"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        android:layout_marginBottom="8dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_pick_makerReport"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:textColor="@color/white"
+        android:layout_height="48dp"
+        android:text="Upload" />
+
+<!--    <com.google.android.material.button.MaterialButton-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/btn_pick_makerReport"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="48dp"-->
+<!--        android:text="+ upload here"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        app:backgroundTint="#22C55E"-->
+<!--        app:cornerRadius="12dp"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_makerReport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+</LinearLayout>
+
+    <!-- Section 10: Previous Year COC -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="10. Previous Year COC"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Attach Files"
+                        android:textSize="14sp"
+                        android:textStyle="bold"
+                        android:textColor="#000000"
+                        android:layout_marginBottom="8dp" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_prevCoc"
+                        android:layout_width="match_parent"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                        android:id="@+id/btn_pick_prevCoc"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="48dp"-->
+<!--                        android:text="+ upload here"-->
+<!--                        android:textColor="#FFFFFF"-->
+<!--                        app:backgroundTint="#22C55E"-->
+<!--                        app:cornerRadius="12dp"/>-->
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler_prevCoc"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <!-- Section 11: DATA Upload -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:padding="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="11. DATA Upload *"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="12dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attach Files"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="8dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btn_pick_dataUpload"
+                    android:layout_width="match_parent"
+                    android:layout_weight="1"
+                    android:textColor="@color/white"
+                    android:layout_height="48dp"
+                    android:text="Upload" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_dataUpload"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ upload here"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_dataUpload"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:textColor="#000000"
+            android:text="← Back to Page 2"
+            android:background="@drawable/button_cancel_bg"
+            android:layout_marginEnd="8dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Submit Inspection"
+            android:textSize="14sp"
+            android:textColor="#000000"
+            android:background="@drawable/button_cancel_bg" />
+    </LinearLayout>
+</LinearLayout>

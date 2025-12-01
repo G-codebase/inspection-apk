@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="#F9F9F9"
+    android:layout_margin="4dp">
+
+    <ImageView
+        android:id="@+id/file_thumbnail"
+        android:layout_width="80dp"
+        android:layout_height="75dp"
+        android:layout_margin="4dp"
+        android:background="#E0E0E0"
+        android:scaleType="centerCrop" />
+
+    <Button
+        android:id="@+id/btn_remove"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:text="Remove"
+        android:textSize="12sp"
+        android:background="#FF6B6B"
+        android:textColor="#FFFFFF"
+        android:layout_margin="4dp" />
+
+    <TextView
+        android:id="@+id/file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="File Name"
+        android:visibility="visible"
+        android:textSize="11sp"
+        android:textColor="#666666"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:padding="4dp" />
+
+</LinearLayout>

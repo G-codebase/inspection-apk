@@ -1,0 +1,1142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="?attr/actionBarSize"
+    android:background="@drawable/card_group_bg"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Scroll Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- DAU Section -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/card_bg"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:text="2. BCP (Beacon Control Panel)"
+                    android:textColor="#000000"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <!-- Replace CheckBox with SwitchMaterial for iOS style -->
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Display provides clear readability"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/clear_readability_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@xml/toggle_thumb_color"
+                        app:trackTint="@xml/toggle_track_color" />
+                </LinearLayout>
+
+                <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DIM function varies brightness"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/dim_function_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@xml/toggle_thumb_color"
+                        app:trackTint="@xml/toggle_track_color" />
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="All buttons working properly"
+                        android:textColor="#000000"
+                        android:textSize="14sp" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/buttons_working_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@xml/toggle_thumb_color"
+                        app:trackTint="@xml/toggle_track_color" />
+                </LinearLayout>
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BCP Photos"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_bcp_photos"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_bcp_photos"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_bcp_photos"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_bcp_photos"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3. DAU (Data Acquisition Unit)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Battery requires replacement?"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/battery_replacement_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@xml/toggle_thumb_color"
+                        app:trackTint="@xml/toggle_track_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Battery Expiry Year *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/battery_year_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_value_bg"
+                    android:popupBackground="@drawable/spinner_dropdown_bg"
+                    android:padding="12dp"
+                    android:textColorHint="#999999"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Battery Expiry Month *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/battery_month_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_value_bg"
+                    android:popupBackground="@drawable/spinner_dropdown_bg"
+                    android:padding="12dp"
+                    android:textColorHint="#999999"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DAU Condition *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/dau_condition_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:hint="Describe condition"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:gravity="top"
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="12dp"/>
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DAU Door"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_dau_door"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_dau_door"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_dau_door"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_dau_door"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_dau_door"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DAU Serial"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_dau_serial"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_dau_serial"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_dau_serial"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_dau_serial"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_dau_serial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DAU Grounding"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_dau_grounding"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_dau_grounding"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_dau_grounding"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_dau_grounding"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_dau_grounding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DAU Backup"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_dau_backup"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_dau_backup"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_dau_backup"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_dau_backup"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_dau_backup"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Fixed Capsule Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="4. Fixed Capsule"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Capsule Description *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/capsule_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:hint="Describe capsule"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"
+                    android:inputType="textMultiLine"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beacon Model/Manufacturer *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/beacon_model_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter beacon model"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beacon Battery Expiry Year *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/beacon_year_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_value_bg"
+                    android:popupBackground="@drawable/spinner_dropdown_bg"
+                    android:padding="12dp"
+                    android:textColorHint="#999999"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beacon Battery Expiry Month *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/beacon_month_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_value_bg"
+                    android:popupBackground="@drawable/spinner_dropdown_bg"
+                    android:padding="12dp"
+                    android:textColorHint="#999999"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beacon Serial Number *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/beacon_serial_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter serial number"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Minimum Voltage *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/beacon_voltage_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="e.g., 3.1"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:inputType="numberDecimal"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Fixed Capsule"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_fixed_capsule"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_fixed_capsule"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_fixed_capsule"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_fixed_capsule"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_fixed_capsule"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cable Gland"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_cable_gland"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_cable_gland"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_cable_gland"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_cable_gland"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_cable_gland"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Beacon Expiry"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_beacon_expiry"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_beacon_expiry"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_beacon_expiry"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_beacon_expiry"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_beacon_expiry"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- Float Free Capsule Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="5. Float Free Capsule"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Model and Serial Number *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/float_free_model_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter model and serial"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EPIRB Serial Number *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/eprib_serial_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter EPIRB serial"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HRU Model/Manufacturer *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/hru_model_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter HRU model"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="HRU replace before next APT?"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/hru_replace_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@xml/toggle_thumb_color"
+                        app:trackTint="@xml/toggle_track_color"/>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HRU Battery Expiry Year *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/hru_year_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_value_bg"
+                    android:popupBackground="@drawable/spinner_dropdown_bg"
+                    android:padding="12dp"
+                    android:textColorHint="#999999"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HRU Battery Expiry Month *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <Spinner
+                    android:id="@+id/hru_month_spinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@drawable/spinner_value_bg"
+                    android:popupBackground="@drawable/spinner_dropdown_bg"
+                    android:padding="12dp"
+                    android:textColorHint="#999999"
+                    android:spinnerMode="dropdown"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Float Free"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_float_free"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_float_free"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_float_free"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_float_free"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_float_free"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="HRU Photo"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_hru_photo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_hru_photo"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_hru_photo"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_hru_photo"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_hru_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <!-- RVI Section -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/card_bg"
+                android:padding="16dp"
+                android:layout_marginBottom="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="6. RVI (Remote Video Interface)"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="12dp" />
+
+                <LinearLayout
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cables properly plugged and functional?"
+                        android:textSize="14sp"
+                        android:textColor="#000000" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/rvi_cables_switch"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:thumbTint="@xml/toggle_thumb_color"
+                        app:trackTint="@xml/toggle_track_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RVI Power Source *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="4dp" />
+
+                <EditText
+                    android:id="@+id/rvi_power_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="How is RVI powered?"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="12dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RVI Model *"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:layout_marginBottom="24dp" />
+
+                <EditText
+                    android:id="@+id/rvi_model_input"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:hint="Enter RVI model"
+                    android:textColorHint="#999999"
+                    android:textColor="#000000"
+                    android:padding="12dp"
+                    android:background="@drawable/input_ios"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="24dp" />
+
+                <!-- Label -->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="RVI Photo"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="6dp"
+                    android:layout_marginTop="16dp" />
+
+<!--                <com.google.android.material.button.MaterialButton-->
+<!--                    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--                    android:id="@+id/btn_pick_rvi_photo"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="48dp"-->
+<!--                    android:text="+ Add Photos"-->
+<!--                    android:textColor="#FFFFFF"-->
+<!--                    app:backgroundTint="#22C55E"-->
+<!--                    app:cornerRadius="12dp"/>-->
+
+                <LinearLayout
+                    android:id="@+id/layout_rvi_photo"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_pick_rvi_photo"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textColor="@color/white"
+                        android:layout_height="48dp"
+                        android:text="Upload" />
+
+                    <com.google.android.material.button.MaterialButton
+                        android:id="@+id/btn_camera_rvi_photo"
+                        android:layout_width="36dp"
+                        android:layout_height="38dp"
+                        android:background="@drawable/ic_camera"/>
+                </LinearLayout>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recycler_rvi_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Navigation -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="">
+
+        <Button
+            android:id="@+id/btn_prev"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="← Back to Page 1"
+            android:textColor="#000000"
+            android:background="@drawable/button_cancel_bg"
+            android:layout_marginEnd="8dp" />
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="0dp" />
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="Continue to Page 3 →"
+            android:textColor="#000000"
+            android:background="@drawable/button_cancel_bg"/>
+    </LinearLayout>
+
+</LinearLayout>
